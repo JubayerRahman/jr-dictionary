@@ -1,0 +1,112 @@
+.dictionary{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.form{
+    position: fixed;
+    top: 10px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    background-color: #282c34;
+}
+.form input{
+    background-color: #282c34;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-family: 'Source Code Pro', monospace;
+    width: 80vw;
+}
+input:focus{
+    border-bottom: 2px solid greenyellow; 
+}
+input::placeholder{
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+.form button{
+    width: 5vw;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    background-color: #282c34;
+    border: none;
+    cursor: pointer;
+}
+ .soundButton{
+    width: 5vw;
+    font-size: 20px;
+    padding: 10px;
+    color: blue;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.form button:hover , .soundButton:hover, .redAudio:hover{
+    /* color: greenyellow; */
+    font-size: 25px;
+    transition: all 0.5s ease-out;
+}
+.trash:hover{
+    color: red;
+}
+.hideResult{
+    display: none;   
+}
+.resultSection{
+    display: block;
+    text-align: left;
+    background-color: white;
+    width: 80vw;
+    padding: 20px;
+    border-radius: 20px;
+    color: #282c34;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12px;
+    margin-bottom: 0%;
+    margin-top: 20px;
+}
+.resultSection h1, .resultSection audio{
+    padding: 10px;
+}
+.resultDivider{
+    width: 100%;
+    height: 2px;
+    background-color: #282c34;
+}
+.redAudio{
+    color: red;
+    padding: 10px;
+    width: 5vw;
+    font-size: 20px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .form input{
+        width: 60vw;
+    }
+    .form button{
+        width: 15vw;
+        font-size: 18px;
+    }
+    .trash{
+        background-color: yellow;
+    }
+    .resultSection{
+        width: 90vw;
+        font-size: 8px;
+    }
+    .definnition{
+        text-align: justify;
+    }
+}
